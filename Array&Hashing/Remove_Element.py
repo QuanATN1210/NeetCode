@@ -34,3 +34,4 @@ Time & Space Complexity
 Time complexity: O(n)
 Space complexity: O(1) 
 '''
+print(5/2)
