@@ -11,8 +11,8 @@ Input: nums = [1,4,1,2]
 
 Output: [1,4,1,2,1,4,1,2]
 '''
+from typing import List
 
-from typing import List, Tuple, Dict, Any
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         n = len(nums)
