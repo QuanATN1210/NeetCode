@@ -37,7 +37,10 @@ class Solution:
             if result == False:
                 return False
         return True
-
+'''
+Time complexity O(n^2)
+Space complexity O(n^2)
+'''
 
 
 
