@@ -41,3 +41,7 @@ class Solution:
                     k-=1
                  
         return res
+'''
+Time complexity O(n^2)
+Space complexity O(1)
+'''
