@@ -61,7 +61,10 @@ class Solution:
             hash_map[cur].random = hash_map[cur.random]
             cur = cur.next        
         return hash_map[head]
-
+'''
+Time complexity O(n)
+Space complexity O(n) 
+'''
         
 
 
