@@ -79,6 +79,29 @@ class Solution:
                 cur.next = ListNode(val=1)
         
         return head
+######## Solution 2
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        cary = 0
+        cur = dummy = ListNode()
+        while l1 or l2 or cary:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+
+            val = val1 + val2 + cary
+            cary = val//10
+            val = val % 10
+            cur.next = ListNode(val=val)
+            cur = cur.next
+
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+        
+        return dummy.next
+'''
+Time complexity O(m)
+Space complexity O(n+m) for output
+'''
 
             
 
